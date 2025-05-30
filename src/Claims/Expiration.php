@@ -25,5 +25,6 @@ class Expiration extends Claim
         // if ($this->isPast($this->getValue())) {
         //     throw new TokenExpiredException('Token has expired');
         // }
+        return true;
     }
 }
