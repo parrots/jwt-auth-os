@@ -22,9 +22,9 @@ class Expiration extends Claim
 
     public function validatePayload()
     {
-        if ($this->isPast($this->getValue())) {
-            throw new TokenExpiredException('Token has expired');
-        }
+        // if ($this->isPast($this->getValue())) {
+        //     throw new TokenExpiredException('Token has expired');
+        // }
 
         return true;
     }
